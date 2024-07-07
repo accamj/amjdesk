@@ -1947,11 +1947,7 @@ fn is_option_can_save(
 
 #[inline]
 pub fn is_incoming_only() -> bool {
-    HARD_SETTINGS
-        .read()
-        .unwrap()
-        .get("conn-type")
-        .map_or(false, |x| x == ("incoming"))
+    true
 }
 
 #[inline]
@@ -1989,7 +1985,7 @@ pub fn is_disable_ab() -> bool {
 
 #[inline]
 pub fn is_disable_account() -> bool {
-    is_some_hard_opton("disable-account")
+    true
 }
 
 #[inline]
