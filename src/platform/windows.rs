@@ -1981,11 +1981,11 @@ mod cert {
     use hbb_common::ResultType;
 
     extern "C" {
-        fn DeleteRustDeskTestCertsW();
+        fn DeleteAmjDeskTestCertsW();
     }
     pub fn uninstall_cert() -> ResultType<()> {
         unsafe {
-            DeleteRustDeskTestCertsW();
+            DeleteAmjDeskTestCertsW();
         }
         Ok(())
     }
@@ -2275,7 +2275,7 @@ pub fn message_box(text: &str) {
         .encode_utf16()
         .chain(std::iter::once(0))
         .collect::<Vec<u16>>();
-    let caption = "RustDesk Output"
+    let caption = "AmjDesk Output"
         .encode_utf16()
         .chain(std::iter::once(0))
         .collect::<Vec<u16>>();
@@ -2438,10 +2438,10 @@ pub fn is_x64() -> bool {
     unsafe { sys_info.u.s().wProcessorArchitecture == PROCESSOR_ARCHITECTURE_AMD64 }
 }
 
-pub fn try_kill_rustdesk_main_window_process() -> ResultType<()> {
-    // Kill rustdesk.exe without extra arg, should only be called by --server
+pub fn try_kill_amjdesk_main_window_process() -> ResultType<()> {
+    // Kill amjdesk.exe without extra arg, should only be called by --server
     // We can find the exact process which occupies the ipc, see more from https://github.com/winsiderss/systeminformer
-    log::info!("try kill rustdesk main window process");
+    log::info!("try kill amjdesk main window process");
     use hbb_common::sysinfo::System;
     let mut sys = System::new();
     sys.refresh_processes();
@@ -2487,7 +2487,7 @@ pub fn try_kill_rustdesk_main_window_process() -> ResultType<()> {
         log::info!("kill process success: {:?}, pid = {:?}", p.cmd(), p.pid());
         return Ok(());
     }
-    bail!("failed to find rustdesk main window process");
+    bail!("failed to find amjdesk main window process");
 }
 
 fn nt_terminate_process(process_id: DWORD) -> ResultType<()> {

@@ -7,7 +7,7 @@ import java.nio.ByteBuffer
 
 object FFI {
     init {
-        System.loadLibrary("rustdesk")
+        System.loadLibrary("amjdesk")
     }
 
     external fun init(ctx: Context)

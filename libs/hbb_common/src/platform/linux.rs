@@ -50,7 +50,7 @@ const INVALID_SESSION: &str = "4294967295";
 
 pub fn get_display_server() -> String {
     // Check for forced display server environment variable first
-    if let Ok(forced_display) = std::env::var("RUSTDESK_FORCED_DISPLAY_SERVER") {
+    if let Ok(forced_display) = std::env::var("AMJDESK_FORCED_DISPLAY_SERVER") {
         return forced_display;
     }
 

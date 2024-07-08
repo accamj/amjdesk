@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  RUST_VERSION: "1.75" # https://github.com/rustdesk/rustdesk/discussions/7503
+  RUST_VERSION: "1.75" # https://github.com/rustdesk/amjdesk/discussions/7503
   CARGO_NDK_VERSION: "3.1.2"
   LLVM_VERSION: "15.0.6"
   FLUTTER_VERSION: "3.13.9"
@@ -31,8 +31,8 @@ env:
   SIGN_BASE_URL: "${{ secrets.SIGN_BASE_URL }}"
 
 jobs:
-  build-rustdesk-android:
-    name: build rustdesk android apk ${{ matrix.job.target }}
+  build-amjdesk-android:
+    name: build amjdesk android apk ${{ matrix.job.target }}
     runs-on: ${{ matrix.job.os }}
     strategy:
       fail-fast: false
@@ -141,7 +141,7 @@ jobs:
           # cp -rf /opt/rustdesk_thirdparty_lib/vcpkg/* /opt/artifacts/vcpkg/
           ls -ls /opt/artifacts/vcpkg/installed/arm64-android/lib/
 
-      - name: Build rustdesk lib
+      - name: Build amjdesk lib
         env:
           ANDROID_NDK_HOME: ${{ steps.setup-ndk.outputs.ndk-path }}
           ANDROID_NDK_ROOT: ${{ steps.setup-ndk.outputs.ndk-path }}
@@ -152,16 +152,16 @@ jobs:
             aarch64-linux-android)
               ./flutter/ndk_arm64.sh
               mkdir -p ./flutter/android/app/src/main/jniLibs/arm64-v8a
-              cp ./target/${{ matrix.job.target }}/release/liblibrustdesk.so ./flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so
+              cp ./target/${{ matrix.job.target }}/release/liblibamjdesk.so ./flutter/android/app/src/main/jniLibs/arm64-v8a/libamjdesk.so
             ;;
             armv7-linux-androideabi)
               ./flutter/ndk_arm.sh
               mkdir -p ./flutter/android/app/src/main/jniLibs/armeabi-v7a
-              cp ./target/${{ matrix.job.target }}/release/liblibrustdesk.so ./flutter/android/app/src/main/jniLibs/armeabi-v7a/librustdesk.so
+              cp ./target/${{ matrix.job.target }}/release/liblibamjdesk.so ./flutter/android/app/src/main/jniLibs/armeabi-v7a/libamjdesk.so
             ;;
           esac
 
-      - name: Build rustdesk
+      - name: Build amjdesk
         shell: bash
         env:
           JAVA_HOME: /usr/lib/jvm/java-11-openjdk-amd64
@@ -173,30 +173,30 @@ jobs:
             aarch64-linux-android)
               mkdir -p ./flutter/android/app/src/main/jniLibs/arm64-v8a
               cp ${ANDROID_NDK_HOME}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so ./flutter/android/app/src/main/jniLibs/arm64-v8a/
-              cp ./target/${{ matrix.job.target }}/release/liblibrustdesk.so ./flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so
+              cp ./target/${{ matrix.job.target }}/release/liblibamjdesk.so ./flutter/android/app/src/main/jniLibs/arm64-v8a/libamjdesk.so
               # build flutter
               pushd flutter
               flutter build apk --release --target-platform android-arm64 --split-per-abi
-              mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk ../rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
+              mv build/app/outputs/flutter-apk/app-arm64-v8a-release.apk ../amjdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
             ;;
             armv7-linux-androideabi)
               mkdir -p ./flutter/android/app/src/main/jniLibs/armeabi-v7a
               cp ${ANDROID_NDK_HOME}/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so ./flutter/android/app/src/main/jniLibs/armeabi-v7a/
-              cp ./target/${{ matrix.job.target }}/release/liblibrustdesk.so ./flutter/android/app/src/main/jniLibs/armeabi-v7a/librustdesk.so
+              cp ./target/${{ matrix.job.target }}/release/liblibamjdesk.so ./flutter/android/app/src/main/jniLibs/armeabi-v7a/libamjdesk.so
               # build flutter
               pushd flutter
               flutter build apk --release --target-platform android-arm --split-per-abi
-              mv build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk ../rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
+              mv build/app/outputs/flutter-apk/app-armeabi-v7a-release.apk ../amjdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk
             ;;
           esac
           popd
           mkdir -p signed-apk; pushd signed-apk
-          mv ../rustdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk ./rustdesk-test-${{ matrix.job.ref }}-${{ matrix.job.ndk }}.apk
+          mv ../amjdesk-${{ env.VERSION }}-${{ matrix.job.arch }}.apk ./amjdesk-test-${{ matrix.job.ref }}-${{ matrix.job.ndk }}.apk
 
       - uses: r0adkll/sign-android-release@v1
         name: Sign app APK
         if: env.ANDROID_SIGNING_KEY != null
-        id: sign-rustdesk
+        id: sign-amjdesk
         with:
           releaseDirectory: ./signed-apk
           signingKeyBase64: ${{ secrets.ANDROID_SIGNING_KEY }}
@@ -213,4 +213,4 @@ jobs:
           prerelease: true
           tag_name: ${{ env.TAG_NAME }}
           files: |
-            ${{steps.sign-rustdesk.outputs.signedReleaseFile}}
+            ${{steps.sign-amjdesk.outputs.signedReleaseFile}}

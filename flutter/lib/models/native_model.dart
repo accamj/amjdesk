@@ -32,7 +32,7 @@ class PlatformFFI {
   // _homeDir is only needed for Android and IOS.
   String _homeDir = '';
   final _eventHandlers = <String, Map<String, HandleEvent>>{};
-  late RustdeskImpl _ffiBind;
+  late AmjdeskImpl _ffiBind;
   late String _appType;
   StreamEventHandler? _eventCallback;
 
@@ -41,7 +41,7 @@ class PlatformFFI {
   static final PlatformFFI instance = PlatformFFI._();
   final _toAndroidChannel = const MethodChannel('mChannel');
 
-  RustdeskImpl get ffiBind => _ffiBind;
+  AmjdeskImpl get ffiBind => _ffiBind;
   F3? _session_get_rgba;
 
   static get localeName => Platform.localeName;
@@ -112,13 +112,13 @@ class PlatformFFI {
   Future<void> init(String appType) async {
     _appType = appType;
     final dylib = isAndroid
-        ? DynamicLibrary.open('librustdesk.so')
+        ? DynamicLibrary.open('libamjdesk.so')
         : isLinux
-            ? DynamicLibrary.open('librustdesk.so')
+            ? DynamicLibrary.open('libamjdesk.so')
             : isWindows
-                ? DynamicLibrary.open('librustdesk.dll')
+                ? DynamicLibrary.open('libamjdesk.dll')
                 : isMacOS
-                    ? DynamicLibrary.open("liblibrustdesk.dylib")
+                    ? DynamicLibrary.open("liblibamjdesk.dylib")
                     : DynamicLibrary.process();
     debugPrint('initializing FFI $_appType');
     try {
@@ -129,7 +129,7 @@ class PlatformFFI {
       } catch (e) {
         debugPrint('Failed to get documents directory: $e');
       }
-      _ffiBind = RustdeskImpl(dylib);
+      _ffiBind = AmjdeskImpl(dylib);
 
       if (isLinux) {
         if (isMain) {
@@ -226,10 +226,10 @@ class PlatformFFI {
   }
 
   /// Start listening to the Rust core's events and frames.
-  void _startListenEvent(RustdeskImpl rustdeskImpl) {
+  void _startListenEvent(AmjdeskImpl amjdeskImpl) {
     final appType =
         _appType == kAppTypeDesktopRemote ? '$_appType,$kWindowId' : _appType;
-    var sink = rustdeskImpl.startGlobalEventStream(appType: appType);
+    var sink = amjdeskImpl.startGlobalEventStream(appType: appType);
     sink.listen((message) {
       () async {
         try {

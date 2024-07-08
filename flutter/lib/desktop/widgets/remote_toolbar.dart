@@ -1052,8 +1052,8 @@ class _DisplayMenuState extends State<_DisplayMenu> {
           ffi: widget.ffi,
           screenAdjustor: _screenAdjustor,
         ),
-        if (pi.isRustDeskIdd)
-          _RustDeskVirtualDisplayMenu(
+        if (pi.isAmjDeskIdd)
+          _AmjDeskVirtualDisplayMenu(
             id: widget.id,
             ffi: widget.ffi,
           ),
@@ -1559,23 +1559,23 @@ class _ResolutionsMenuState extends State<_ResolutionsMenu> {
   }
 }
 
-class _RustDeskVirtualDisplayMenu extends StatefulWidget {
+class _AmjDeskVirtualDisplayMenu extends StatefulWidget {
   final String id;
   final FFI ffi;
 
-  _RustDeskVirtualDisplayMenu({
+  _AmjDeskVirtualDisplayMenu({
     Key? key,
     required this.id,
     required this.ffi,
   }) : super(key: key);
 
   @override
-  State<_RustDeskVirtualDisplayMenu> createState() =>
-      _RustDeskVirtualDisplayMenuState();
+  State<_AmjDeskVirtualDisplayMenu> createState() =>
+      _AmjDeskVirtualDisplayMenuState();
 }
 
-class _RustDeskVirtualDisplayMenuState
-    extends State<_RustDeskVirtualDisplayMenu> {
+class _AmjDeskVirtualDisplayMenuState
+    extends State<_AmjDeskVirtualDisplayMenu> {
   @override
   void initState() {
     super.initState();
@@ -1590,7 +1590,7 @@ class _RustDeskVirtualDisplayMenuState
       return Offstage();
     }
 
-    final virtualDisplays = widget.ffi.ffiModel.pi.RustDeskVirtualDisplays;
+    final virtualDisplays = widget.ffi.ffiModel.pi.AmjDeskVirtualDisplays;
     final privacyModeState = PrivacyModeState.find(widget.id);
 
     final children = <Widget>[];

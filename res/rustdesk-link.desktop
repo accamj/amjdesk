@@ -1,10 +1,10 @@
 [Desktop Entry]
-Name=RustDeskURL Scheme Handler
+Name=AmjDeskURL Scheme Handler
 NoDisplay=true
-MimeType=x-scheme-handler/rustdesk;
-TryExec=rustdesk
-Exec=rustdesk %u
-Icon=rustdesk
+MimeType=x-scheme-handler/amjdesk;
+TryExec=amjdesk
+Exec=amjdesk %u
+Icon=amjdesk
 Terminal=false
 Type=Application
 StartupNotify=false

@@ -1,12 +1,12 @@
-use librustdesk::api::RustDeskApiTable;
-/// This file demonstrates how to write a custom plugin for RustDesk.
+use libamjdesk::api::AmjDeskApiTable;
+/// This file demonstrates how to write a custom plugin for AmjDesk.
 use std::ffi::{c_char, c_int, CString};
 
 lazy_static::lazy_static! {
     pub static ref PLUGIN_NAME: CString = CString::new("A Template Rust Plugin").unwrap();
     pub static ref PLUGIN_ID: CString = CString::new("TemplatePlugin").unwrap();
-    // Do your own logic based on the API provided by RustDesk.
-    pub static ref API: RustDeskApiTable = RustDeskApiTable::default();
+    // Do your own logic based on the API provided by AmjDesk.
+    pub static ref API: AmjDeskApiTable = AmjDeskApiTable::default();
 }
 
 #[no_mangle]

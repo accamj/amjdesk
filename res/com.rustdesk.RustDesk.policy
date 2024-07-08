@@ -3,16 +3,16 @@
  "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
  "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
 <policyconfig>
-  <vendor>RustDesk</vendor>
+  <vendor>AmjDesk</vendor>
   <vendor_url>https://rustdesk.com/</vendor_url>
-  <icon_name>rustdesk</icon_name>
-  <action id="com.rustdesk.RustDesk.options">
-    <description>Change RustDesk options</description>
-    <message>Authentication is required to change RustDesk options</message>
-    <message xml:lang="zh_CN">要更改RustDesk选项, 需要您先通过身份验证</message>
-    <message xml:lang="zh_TW">要變更RustDesk選項, 需要您先通過身份驗證</message>
-    <message xml:lang="de">Authentifizierung zum Ändern der RustDesk-Optionen</message>
-    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/rustdesk/files/polkit</annotate>
+  <icon_name>amjdesk</icon_name>
+  <action id="com.amjdesk.AmjDesk.options">
+    <description>Change AmjDesk options</description>
+    <message>Authentication is required to change AmjDesk options</message>
+    <message xml:lang="zh_CN">要更改AmjDesk选项, 需要您先通过身份验证</message>
+    <message xml:lang="zh_TW">要變更AmjDesk選項, 需要您先通過身份驗證</message>
+    <message xml:lang="de">Authentifizierung zum Ändern der AmjDesk-Optionen</message>
+    <annotate key="org.freedesktop.policykit.exec.path">/usr/share/amjdesk/files/polkit</annotate>
     <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
     <defaults>
       <allow_any>auth_admin</allow_any>

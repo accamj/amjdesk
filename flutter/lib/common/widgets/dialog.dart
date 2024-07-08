@@ -218,50 +218,53 @@ void changeWhiteList({Function()? callback}) async {
       ),
       actions: [
         dialogButton("Cancel", onPressed: close, isOutline: true),
-        if (!isOptFixed)dialogButton("Clear", onPressed: () async {
-          await bind.mainSetOption(
-              key: kOptionWhitelist, value: defaultOptionWhitelist);
-          callback?.call();
-          close();
-        }, isOutline: true),
-        if (!isOptFixed) dialogButton(
-          "OK",
-          onPressed: () async {
-            setState(() {
-              msg = "";
-              isInProgress = true;
-            });
-            newWhiteListField = controller.text.trim();
-            var newWhiteList = "";
-            if (newWhiteListField.isEmpty) {
-              // pass
-            } else {
-              final ips = newWhiteListField.trim().split(RegExp(r"[\s,;\n]+"));
-              // test ip
-              final ipMatch = RegExp(
-                  r"^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)(\/([1-9]|[1-2][0-9]|3[0-2])){0,1}$");
-              final ipv6Match = RegExp(
-                  r"^(((?:[0-9A-Fa-f]{1,4}))*((?::[0-9A-Fa-f]{1,4}))*::((?:[0-9A-Fa-f]{1,4}))*((?::[0-9A-Fa-f]{1,4}))*|((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4})){7})(\/([1-9]|[1-9][0-9]|1[0-1][0-9]|12[0-8])){0,1}$");
-              for (final ip in ips) {
-                if (!ipMatch.hasMatch(ip) && !ipv6Match.hasMatch(ip)) {
-                  msg = "${translate("Invalid IP")} $ip";
-                  setState(() {
-                    isInProgress = false;
-                  });
-                  return;
-                }
-              }
-              newWhiteList = ips.join(',');
-            }
-            if (newWhiteList.trim().isEmpty) {
-              newWhiteList = defaultOptionWhitelist;
-            }
+        if (!isOptFixed)
+          dialogButton("Clear", onPressed: () async {
             await bind.mainSetOption(
-                key: kOptionWhitelist, value: newWhiteList);
+                key: kOptionWhitelist, value: defaultOptionWhitelist);
             callback?.call();
             close();
-          },
-        ),
+          }, isOutline: true),
+        if (!isOptFixed)
+          dialogButton(
+            "OK",
+            onPressed: () async {
+              setState(() {
+                msg = "";
+                isInProgress = true;
+              });
+              newWhiteListField = controller.text.trim();
+              var newWhiteList = "";
+              if (newWhiteListField.isEmpty) {
+                // pass
+              } else {
+                final ips =
+                    newWhiteListField.trim().split(RegExp(r"[\s,;\n]+"));
+                // test ip
+                final ipMatch = RegExp(
+                    r"^(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)\.(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]?|0)(\/([1-9]|[1-2][0-9]|3[0-2])){0,1}$");
+                final ipv6Match = RegExp(
+                    r"^(((?:[0-9A-Fa-f]{1,4}))*((?::[0-9A-Fa-f]{1,4}))*::((?:[0-9A-Fa-f]{1,4}))*((?::[0-9A-Fa-f]{1,4}))*|((?:[0-9A-Fa-f]{1,4}))((?::[0-9A-Fa-f]{1,4})){7})(\/([1-9]|[1-9][0-9]|1[0-1][0-9]|12[0-8])){0,1}$");
+                for (final ip in ips) {
+                  if (!ipMatch.hasMatch(ip) && !ipv6Match.hasMatch(ip)) {
+                    msg = "${translate("Invalid IP")} $ip";
+                    setState(() {
+                      isInProgress = false;
+                    });
+                    return;
+                  }
+                }
+                newWhiteList = ips.join(',');
+              }
+              if (newWhiteList.trim().isEmpty) {
+                newWhiteList = defaultOptionWhitelist;
+              }
+              await bind.mainSetOption(
+                  key: kOptionWhitelist, value: newWhiteList);
+              callback?.call();
+              close();
+            },
+          ),
       ],
       onCancel: close,
     );
@@ -928,7 +931,7 @@ _connectDialog(
       }
       return Column(
         children: [
-          descWidget(translate('verify_rustdesk_password_tip')),
+          descWidget(translate('verify_amjdesk_password_tip')),
           PasswordWidget(
             controller: passwordController,
             autoFocus: osUsernameController == null,
