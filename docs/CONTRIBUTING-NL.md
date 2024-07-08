@@ -1,11 +1,11 @@
-# Bijdragen aan RustDesk
+# Bijdragen aan AmjDesk
 
-RustDesk verwelkomt bijdragen van iedereen. Hier zijn de richtlijnen als u denkt 
+AmjDesk verwelkomt bijdragen van iedereen. Hier zijn de richtlijnen als u denkt 
 ons te willen helpen:
 
 ## Bijdragen
 
-Bijdragen aan RustDesk of haar afhankelijkheden moeten worden gedaan in de 
+Bijdragen aan AmjDesk of haar afhankelijkheden moeten worden gedaan in de 
 vorm van GitHub pull verzoeken. Elk pull verzoek zal worden beoordeeld door 
 een core bijdrager (iemand met toestemming om patches te plaatsen) en ofwel 
 worden geplaatst in de hoofd structuur of feedback krijgen voor veranderingen 
@@ -35,7 +35,7 @@ inspanningen van medewerkers aan hetzelfde issue te voorkomen.
 
 - Als je patch niet beoordeeld wordt of je hebt een specifiek persoon nodig om hem 
   te beoordelen kunt u @-reply een reviewer vragen in het pull verzoek of een
-  commentaar, of je kunt om een review vragen via [email](mailto:info@rustdesk.com).
+  commentaar, of je kunt om een review vragen via [email](mailto:info@accamj.com).
 
 - Tests toevoegen die relevant zijn voor de gerepareerde bug of de nieuwe functie.
 
@@ -47,4 +47,4 @@ https://github.com/rustdesk/rustdesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Communicatie
 
-RustDesk medewerkers bezoeken frequent [Discord](https://discord.gg/nDceKgxnkV).
+AmjDesk medewerkers bezoeken frequent [Discord](https://discord.gg/nDceKgxnkV).

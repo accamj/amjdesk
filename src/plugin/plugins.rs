@@ -83,7 +83,7 @@ type CallbackGetId = extern "C" fn() -> *const c_char;
 /// msg:   The message.
 type CallbackLog = extern "C" fn(level: *const c_char, msg: *const c_char);
 
-/// Callback to the librustdesk core.
+/// Callback to the libamjdesk core.
 ///
 /// method: the method name of this callback.
 /// json: the json data for the parameters. The argument *must* be non-null.
@@ -541,7 +541,7 @@ pub fn handle_client_event(id: &str, peer: &str, event: &[u8]) -> Message {
                 msg
             } else {
                 let (code, msg) = ret.get_code_msg(id);
-                if code > ERR_RUSTDESK_HANDLE_BASE && code < ERR_PLUGIN_HANDLE_BASE {
+                if code > ERR_AMJDESK_HANDLE_BASE && code < ERR_PLUGIN_HANDLE_BASE {
                     log::debug!(
                         "Plugin {} failed to handle client event, code: {}, msg: {}",
                         id,

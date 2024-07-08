@@ -10,9 +10,9 @@
 #include "flutter_window.h"
 #include "utils.h"
 
-typedef char** (*FUNC_RUSTDESK_CORE_MAIN)(int*);
-typedef void (*FUNC_RUSTDESK_FREE_ARGS)( char**, int);
-typedef int (*FUNC_RUSTDESK_GET_APP_NAME)(wchar_t*, int);
+typedef char** (*FUNC_amjdesk_core_main)(int*);
+typedef void (*FUNC_AMJDESK_FREE_ARGS)( char**, int);
+typedef int (*FUNC_AMJDESK_GET_APP_NAME)(wchar_t*, int);
 /// Note: `--server`, `--service` are already handled in [core_main.rs].
 const std::vector<std::string> parameters_white_list = {"--install", "--cm"};
 
@@ -21,21 +21,21 @@ const wchar_t* getWindowClassName();
 int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
                       _In_ wchar_t *command_line, _In_ int show_command)
 {
-  HINSTANCE hInstance = LoadLibraryA("librustdesk.dll");
+  HINSTANCE hInstance = LoadLibraryA("libamjdesk.dll");
   if (!hInstance)
   {
-    std::cout << "Failed to load librustdesk.dll." << std::endl;
+    std::cout << "Failed to load libamjdesk.dll." << std::endl;
     return EXIT_FAILURE;
   }
-  FUNC_RUSTDESK_CORE_MAIN rustdesk_core_main =
-      (FUNC_RUSTDESK_CORE_MAIN)GetProcAddress(hInstance, "rustdesk_core_main_args");
-  if (!rustdesk_core_main)
+  FUNC_amjdesk_core_main amjdesk_core_main =
+      (FUNC_amjdesk_core_main)GetProcAddress(hInstance, "amjdesk_core_main_args");
+  if (!amjdesk_core_main)
   {
-    std::cout << "Failed to get rustdesk_core_main." << std::endl;
+    std::cout << "Failed to get amjdesk_core_main." << std::endl;
     return EXIT_FAILURE;
   }
-  FUNC_RUSTDESK_FREE_ARGS free_c_args =
-      (FUNC_RUSTDESK_FREE_ARGS)GetProcAddress(hInstance, "free_c_args");
+  FUNC_AMJDESK_FREE_ARGS free_c_args =
+      (FUNC_AMJDESK_FREE_ARGS)GetProcAddress(hInstance, "free_c_args");
   if (!free_c_args)
   {
     std::cout << "Failed to get free_c_args." << std::endl;
@@ -49,21 +49,21 @@ int APIENTRY wWinMain(_In_ HINSTANCE instance, _In_opt_ HINSTANCE prev,
   }
 
   int args_len = 0;
-  char** c_args = rustdesk_core_main(&args_len);
+  char** c_args = amjdesk_core_main(&args_len);
   if (!c_args)
   {
     std::string args_str = "";
     for (const auto& argument : command_line_arguments) {
       args_str += (argument + " ");
     }
-    // std::cout << "RustDesk [" << args_str << "], core returns false, exiting without launching Flutter app." << std::endl;
+    // std::cout << "AmjDesk [" << args_str << "], core returns false, exiting without launching Flutter app." << std::endl;
     return EXIT_SUCCESS;
   }
   std::vector<std::string> rust_args(c_args, c_args + args_len);
   free_c_args(c_args, args_len);
 
-  std::wstring app_name = L"RustDesk";
-  FUNC_RUSTDESK_GET_APP_NAME get_rustdesk_app_name = (FUNC_RUSTDESK_GET_APP_NAME)GetProcAddress(hInstance, "get_rustdesk_app_name");
+  std::wstring app_name = L"AmjDesk";
+  FUNC_AMJDESK_GET_APP_NAME get_rustdesk_app_name = (FUNC_AMJDESK_GET_APP_NAME)GetProcAddress(hInstance, "get_rustdesk_app_name");
   if (get_rustdesk_app_name) {
     wchar_t app_name_buffer[512] = {0};
     if (get_rustdesk_app_name(app_name_buffer, 512) == 0) {

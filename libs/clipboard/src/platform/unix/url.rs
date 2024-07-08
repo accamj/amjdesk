@@ -3,7 +3,7 @@ use std::path::{Path, PathBuf};
 use crate::CliprdrError;
 
 // on x11, path will be encode as
-// "/home/rustdesk/pictures/🖼️.png" -> "file:///home/rustdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png"
+// "/home/amjdesk/pictures/🖼️.png" -> "file:///home/amjdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png"
 // url encode and decode is needed
 const ENCODE_SET: percent_encoding::AsciiSet = percent_encoding::CONTROLS.add(b' ').remove(b'/');
 
@@ -53,11 +53,11 @@ pub(super) fn parse_uri_list(text: &str) -> Result<Vec<PathBuf>, CliprdrError> {
 mod uri_test {
     #[test]
     fn test_conversion() {
-        let path = std::path::PathBuf::from("/home/rustdesk/pictures/🖼️.png");
+        let path = std::path::PathBuf::from("/home/amjdesk/pictures/🖼️.png");
         let uri = super::encode_path_to_uri(&path);
         assert_eq!(
             uri,
-            "file:///home/rustdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png"
+            "file:///home/amjdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png"
         );
         let convert_back = super::parse_uri_to_path(&uri).unwrap();
         assert_eq!(path, convert_back);
@@ -65,8 +65,8 @@ mod uri_test {
 
     #[test]
     fn parse_list() {
-        let uri_list = r#"file:///home/rustdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png
-file:///home/rustdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png
+        let uri_list = r#"file:///home/amjdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png
+file:///home/amjdesk/pictures/%F0%9F%96%BC%EF%B8%8F.png
 "#;
         let list = super::parse_uri_list(uri_list.into()).unwrap();
         assert!(list.len() == 2);

@@ -302,13 +302,13 @@ class FloatingWindowService : Service(), View.OnTouchListener {
 
      private fun showPopupMenu() {
          val popupMenu = PopupMenu(this, floatingView)
-         val idShowRustDesk = 0
-         popupMenu.menu.add(0, idShowRustDesk, 0, translate("Show RustDesk"))
+         val idShowAmjDesk = 0
+         popupMenu.menu.add(0, idShowAmjDesk, 0, translate("Show AmjDesk"))
          val idStopService = 1
          popupMenu.menu.add(0, idStopService, 0, translate("Stop service"))
          popupMenu.setOnMenuItemClickListener { menuItem ->
              when (menuItem.itemId) {
-                 idShowRustDesk -> {
+                 idShowAmjDesk -> {
                      openMainActivity()
                      true
                  }

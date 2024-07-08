@@ -163,12 +163,12 @@ pub fn translate_locale(name: String, locale: &str) -> String {
         if let Some(value) = placeholder_value.as_ref() {
             s = s.replace("{}", &value);
         }
-        if !crate::is_rustdesk() {
-            if s.contains("RustDesk")
+        if !crate::is_amjdesk() {
+            if s.contains("AmjDesk")
                 && !name.starts_with("upgrade_rustdesk_server_pro")
                 && name != "powered_by_me"
             {
-                s = s.replace("RustDesk", &crate::get_app_name());
+                s = s.replace("AmjDesk", &crate::get_app_name());
             }
         }
         s

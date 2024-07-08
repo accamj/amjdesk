@@ -18,7 +18,7 @@ build_arm64(){
     flutter pub get
     cd $WORKDIR
     $WORKDIR/flutter/ndk_arm64.sh
-    cp $WORKDIR/target/aarch64-linux-android/release/liblibrustdesk.so $WORKDIR/flutter/android/app/src/main/jniLibs/arm64-v8a/librustdesk.so
+    cp $WORKDIR/target/aarch64-linux-android/release/liblibamjdesk.so $WORKDIR/flutter/android/app/src/main/jniLibs/arm64-v8a/libamjdesk.so
     cd $CWD
 }
 
