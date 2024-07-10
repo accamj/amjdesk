@@ -4,7 +4,7 @@
  "http://www.freedesktop.org/standards/PolicyKit/1/policyconfig.dtd">
 <policyconfig>
   <vendor>AmjDesk</vendor>
-  <vendor_url>https://rustdesk.com/</vendor_url>
+  <vendor_url>https://accamj.com/</vendor_url>
   <icon_name>amjdesk</icon_name>
   <action id="com.amjdesk.AmjDesk.options">
     <description>Change AmjDesk options</description>
