@@ -17,7 +17,7 @@ Encore un autre logiciel de bureau à distance, écrit en Rust. Fonctionne direc
 
 AmjDesk accueille les contributions de tout le monde. Voir [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) pour plus d'informations.
 
-[**TÉLÉCHARGEMENT BINAIRE**](https://github.com/rustdesk/rustdesk/releases)
+[**TÉLÉCHARGEMENT BINAIRE**](https://github.com/accamj/amjdesk/releases)
 
 ## Dépendances
 

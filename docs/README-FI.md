@@ -17,7 +17,7 @@ Vielä yksi etätyöpöytäohjelmisto, ohjelmoitu Rust-kielellä. Toimii suoraan
 
 AmjDesk toivottaa avustukset tervetulleiksi kaikilta. Katso lisätietoja [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) avun saamiseksi.
 
-[**BINAARILATAUS**](https://github.com/rustdesk/rustdesk/releases)
+[**BINAARILATAUS**](https://github.com/accamj/amjdesk/releases)
 
 ## Riippuvuudet
 

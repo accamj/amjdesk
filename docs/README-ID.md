@@ -23,9 +23,9 @@ AmjDesk mengajak semua orang untuk ikut berkontribusi. Lihat [`docs/CONTRIBUTING
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**UNDUH BINARY**](https://github.com/rustdesk/rustdesk/releases)
+[**UNDUH BINARY**](https://github.com/accamj/amjdesk/releases)
 
-[**NIGHTLY BUILD**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**NIGHTLY BUILD**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

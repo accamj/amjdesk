@@ -22,7 +22,7 @@ AmjDesk là một phần mềm điểu khiển máy tính từ xa mã nguồn m�
 **AmjDesk** luôn hoan nghênh mọi đóng góp từ mọi người. Hãy xem tệp [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) để bắt đầu. 
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
-[**BINARY DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 [**NIGHTLY BUILD**](https://github.com/rustdesk/rustdesk/FAQreleases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"

@@ -17,7 +17,7 @@ Denove alia fora labortabla programo, skribita en Rust. Ĝi funkcias elskatole, 
 
 AmjDesk bonvenigas kontribuon de ĉiuj. Vidu [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) por helpo komenci.
 
-[**BINARA ELŜUTO**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARA ELŜUTO**](https://github.com/accamj/amjdesk/releases)
 
 ## Dependantaĵoj
 

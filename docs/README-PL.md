@@ -21,9 +21,9 @@ AmjDesk zaprasza do współpracy każdego. Zobacz [`docs/CONTRIBUTING-PL.md`](CO
 
 [**PYTANIA I ODPOWIEDZI (FAQ)**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**POBIERANIE BINARIÓW**](https://github.com/rustdesk/rustdesk/releases)
+[**POBIERANIE BINARIÓW**](https://github.com/accamj/amjdesk/releases)
 
-[**WERSJE TESTOWE (NIGHTLY)**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**WERSJE TESTOWE (NIGHTLY)**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

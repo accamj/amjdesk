@@ -17,7 +17,7 @@ Mais um software de desktop remoto, escrito em Rust. Funciona por padrão, sem n
 
 AmjDesk acolhe contribuições de todos. Leia [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) para ver como começar.
 
-[**DOWNLOAD DE BINÁRIOS**](https://github.com/rustdesk/rustdesk/releases)
+[**DOWNLOAD DE BINÁRIOS**](https://github.com/accamj/amjdesk/releases)
 
 ## Dependências
 

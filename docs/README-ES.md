@@ -19,7 +19,7 @@ AmjDesk agradece la contribución de todo el mundo. Lee [`docs/CONTRIBUTING.md`]
 
 [**¿Cómo funciona rustdesk?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**DESCARGA DE BINARIOS**](https://github.com/rustdesk/rustdesk/releases)
+[**DESCARGA DE BINARIOS**](https://github.com/accamj/amjdesk/releases)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

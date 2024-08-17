@@ -22,9 +22,9 @@ AmjDesk приветствует вклад каждого. Ознакомьте
 
 [**Как работает AmjDesk?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**СКАЧАТЬ ПРИЛОЖЕНИЕ**](https://github.com/rustdesk/rustdesk/releases)
+[**СКАЧАТЬ ПРИЛОЖЕНИЕ**](https://github.com/accamj/amjdesk/releases)
 
-[**ночные сборки (актуальные)**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**ночные сборки (актуальные)**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png" alt="Get it on F-Droid" height="80">](https://f-droid.org/en/packages/com.carriez.flutter_hbb)
 

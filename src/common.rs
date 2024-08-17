@@ -974,7 +974,7 @@ pub fn check_software_update() {
 
 #[tokio::main(flavor = "current_thread")]
 async fn check_software_update_() -> hbb_common::ResultType<()> {
-    let url = "https://github.com/rustdesk/rustdesk/releases/latest";
+    let url = "https://github.com/accamj/amjdesk/releases/latest";
     let latest_release_response = create_http_client_async().get(url).send().await?;
     let latest_release_version = latest_release_response
         .url()

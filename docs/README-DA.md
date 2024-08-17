@@ -17,7 +17,7 @@ Endnu en fjernskrivebordssoftware, skrevet i Rust. Fungerer ud af æsken, ingen 
 
 AmjDesk hilser bidrag fra alle velkommen. Se [`docs/CONTRIBUTING.md`](docs/CONTRIBUTING.md) for at få hjælp til at komme i gang.
 
-[**PROGRAM DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**PROGRAM DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
 ## Afhængigheder
 

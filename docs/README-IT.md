@@ -23,9 +23,9 @@ AmjDesk accoglie il contributo di tutti. Per ulteriori informazioni su come iniz
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**SCARICA PROGRAMMA**](https://github.com/rustdesk/rustdesk/releases)
+[**SCARICA PROGRAMMA**](https://github.com/accamj/amjdesk/releases)
 
-[**SCARICA NIGHTLY**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**SCARICA NIGHTLY**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

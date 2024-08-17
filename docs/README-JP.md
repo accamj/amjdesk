@@ -22,7 +22,7 @@ AmjDeskは誰からの貢献も歓迎します。 貢献するには [`docs/CONT
 
 [**AmjDeskはどの様に動くのか?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**BINARY DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
 ## 依存関係
 

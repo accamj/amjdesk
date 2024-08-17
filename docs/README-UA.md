@@ -23,9 +23,9 @@ AmjDesk вітає внесок кожного. Ознайомтеся з [CONTR
 
 [**ЧаПи**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**ЗАВАНТАЖЕННЯ ЗАСТОСУНКУ**](https://github.com/rustdesk/rustdesk/releases)
+[**ЗАВАНТАЖЕННЯ ЗАСТОСУНКУ**](https://github.com/accamj/amjdesk/releases)
 
-[**НІЧНІ ЗБІРКИ**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**НІЧНІ ЗБІРКИ**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

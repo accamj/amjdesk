@@ -21,7 +21,7 @@ A AmjDesk szívesen fogad minden contributiont, támogatást mindenkitől. Lásd
 
 [**Hogyan működik a AmjDesk?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**BINARY LELTÖLTÉS**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY LELTÖLTÉS**](https://github.com/accamj/amjdesk/releases)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"

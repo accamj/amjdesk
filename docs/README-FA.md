@@ -23,7 +23,7 @@
 
 [راست‌دسک چطور کار می کند؟](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[دریافت نرم‌افزار](https://github.com/rustdesk/rustdesk/releases)
+[دریافت نرم‌افزار](https://github.com/accamj/amjdesk/releases)
 
 ## وابستگی ها
 

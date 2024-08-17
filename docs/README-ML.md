@@ -17,7 +17,7 @@
 
 എല്ലാവരുടെയും സംഭാവനയെ AmjDesk സ്വാഗതം ചെയ്യുന്നു. ആരംഭിക്കുന്നതിനുള്ള സഹായത്തിന് [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) കാണുക.
 
-[**BINARY DOWNLOAD**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
 ## ഡിപെൻഡൻസികൾ
 

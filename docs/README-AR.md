@@ -25,7 +25,7 @@
 
 [**؟ AmjDesk كيفية يعمل**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**BINARY تنزيل**](https://github.com/rustdesk/rustdesk/releases)
+[**BINARY تنزيل**](https://github.com/accamj/amjdesk/releases)
 
 ## التبعيات
 

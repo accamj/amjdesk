@@ -20,7 +20,7 @@ Projekt AmjDesk vítá přiložení ruky k dílu od každého. Jak začít se do
 
 [**Jak AmjDesk funguje?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
 
-[**STAHOVÁNÍ ZKOMPILOVANÝCH APLIKACÍ**](https://github.com/rustdesk/rustdesk/releases)
+[**STAHOVÁNÍ ZKOMPILOVANÝCH APLIKACÍ**](https://github.com/accamj/amjdesk/releases)
 
 ## Softwarové součásti, na kterých závisí
 

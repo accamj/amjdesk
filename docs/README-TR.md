@@ -22,9 +22,9 @@ AmjDesk, herkesten katkıyı kabul eder. Başlamak için [CONTRIBUTING.md](docs/
 
 [**SSS**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**BİNARİ İNDİR**](https://github.com/rustdesk/rustdesk/releases)
+[**BİNARİ İNDİR**](https://github.com/accamj/amjdesk/releases)
 
-[**NİGHTLY DERLEME**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**NİGHTLY DERLEME**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="F-Droid'de Alın"

@@ -21,9 +21,9 @@ AmjDesk heißt jegliche Mitarbeit willkommen. Schauen Sie sich [CONTRIBUTING-DE.
 
 [**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
 
-[**Programm herunterladen**](https://github.com/rustdesk/rustdesk/releases)
+[**Programm herunterladen**](https://github.com/accamj/amjdesk/releases)
 
-[**Nächtliche Erstellung**](https://github.com/rustdesk/rustdesk/releases/tag/nightly)
+[**Nächtliche Erstellung**](https://github.com/accamj/amjdesk/releases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
