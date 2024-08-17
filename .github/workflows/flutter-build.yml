@@ -1,5 +1,7 @@
 name: Build the flutter version of the AmjDesk
-
+permissions:
+  contents: write
+  
 on:
   workflow_call:
     inputs:
