@@ -1,7 +1,5 @@
 name: playground
-permissions:
-  contents: write
-  
+
 on:
   #schedule:
     # schedule build every night
@@ -211,6 +209,8 @@ jobs:
 
       - name: Publish signed apk package
         uses: softprops/action-gh-release@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.AMJ_TOKEN }}
         with:
           prerelease: true
           tag_name: ${{ env.TAG_NAME }}
