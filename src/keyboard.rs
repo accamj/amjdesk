@@ -866,7 +866,7 @@ pub fn map_keyboard_mode(_peer: &str, event: &Event, mut key_event: KeyEvent) ->
     #[cfg(target_os = "windows")]
     let keycode = match _peer {
         OS_LOWER_WINDOWS => {
-            // https://github.com/rustdesk/rustdesk/issues/1371
+            // https://github.com/accamj/amjdesk/issues/1371
             // Filter scancodes that are greater than 255 and the hight word is not 0xE0.
             if event.position_code > 255 && (event.position_code >> 8) != 0xE0 {
                 return None;

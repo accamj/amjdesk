@@ -128,14 +128,14 @@ Veuillez vous assurer que vous exécutez ces commandes à partir de la racine du
 
 ## Structure du projet
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)** : codec vidéo, config, wrapper tcp/udp, protobuf, fonctions fs pour le transfert de fichiers, et quelques autres fonctions utilitaires.
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)** : capture d'écran
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)** : contrôle clavier/souris spécifique à la plate-forme
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)** : interface graphique
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)** : services audio/clipboard/input/vidéo, et connexions réseau
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)** : démarrer une connexion entre pairs
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)** : Communiquer avec [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attendre une connexion distante directe (TCP hole punching) ou relayée.
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)** : code spécifique à la plateforme
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)** : codec vidéo, config, wrapper tcp/udp, protobuf, fonctions fs pour le transfert de fichiers, et quelques autres fonctions utilitaires.
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)** : capture d'écran
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)** : contrôle clavier/souris spécifique à la plate-forme
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)** : interface graphique
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)** : services audio/clipboard/input/vidéo, et connexions réseau
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)** : démarrer une connexion entre pairs
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)** : Communiquer avec [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attendre une connexion distante directe (TCP hole punching) ou relayée.
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)** : code spécifique à la plateforme
 
 ## Images
 

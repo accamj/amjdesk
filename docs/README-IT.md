@@ -6,7 +6,7 @@
   <a href="#struttura-dei-file">Struttura</a> •
   <a href="#schermate">Schermate</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-DA.md">Dansk</a>] | [<a href="README-GR.md">Ελληνικά</a>] | [<a href="README-TR.md">Türkçe</a>]<br>
-  <b>Abbiamo bisogno del tuo aiuto per tradurre questo file README e la <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">UI AmjDesk</a> nella tua lingua nativa</b>
+  <b>Abbiamo bisogno del tuo aiuto per tradurre questo file README e la <a href="https://github.com/accamj/amjdesk/tree/master/src/lang">UI AmjDesk</a> nella tua lingua nativa</b>
 </p>
 
 Chatta con noi su: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
@@ -21,7 +21,7 @@ Ancora un altro software per il controllo remoto del desktop, scritto in Rust. F
 
 AmjDesk accoglie il contributo di tutti. Per ulteriori informazioni su come iniziare a contribuire, vedi [CONTRIBUTING.md](CONTRIBUTING-IT.md).
 
-[**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**FAQ**](https://github.com/accamj/amjdesk/wiki/FAQ)
 
 [**SCARICA PROGRAMMA**](https://github.com/accamj/amjdesk/releases)
 
@@ -33,7 +33,7 @@ AmjDesk accoglie il contributo di tutti. Per ulteriori informazioni su come iniz
 
 ## Dipendenze
 
-Le versioni desktop utilizzano Flutter o Sciter (deprecato) per l'interfaccia utente, questo tutorial è solo per Sciter, poiché è più facile per iniziare. Controlla il nostro [CI](https://github.com/rustdesk/rustdesk/blob/master/.github/workflows/flutter-build.yml) per la compilazione della versione Flutter.
+Le versioni desktop utilizzano Flutter o Sciter (deprecato) per l'interfaccia utente, questo tutorial è solo per Sciter, poiché è più facile per iniziare. Controlla il nostro [CI](https://github.com/accamj/amjdesk/blob/master/.github/workflows/flutter-build.yml) per la compilazione della versione Flutter.
 
 Scarica la libreria dinamica Sciter.
 
@@ -152,17 +152,17 @@ Assicurati di eseguire questi comandi dalla radice del repository AmjDesk, altri
 
 ## Struttura dei file
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: codec video, config, wrapper tcp/udp, protobuf, funzioni per il trasferimento file, e altre funzioni utili.
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: cattura dello schermo
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: controllo tastiera/mouse specifico della piattaforma
-- **[libs/clipboard](https://github.com/rustdesk/rustdesk/tree/master/libs/clipboard)**: implementazione del copia e incolla dei file per Windows, Linux, macOS.
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: Sciter UI obsoleto (deprecato)
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: servizi audio/appunti/input/video e connessioni di rete
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: avvio di una connessione peer
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: comunica con [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attende la connessione remota diretta (TCP hole punching) oppure indiretta (relayed)
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: codice specifico della piattaforma
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: codice Flutter per desktop e mobile
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: JavaScript per client web Flutter
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: codec video, config, wrapper tcp/udp, protobuf, funzioni per il trasferimento file, e altre funzioni utili.
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: cattura dello schermo
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: controllo tastiera/mouse specifico della piattaforma
+- **[libs/clipboard](https://github.com/accamj/amjdesk/tree/master/libs/clipboard)**: implementazione del copia e incolla dei file per Windows, Linux, macOS.
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: Sciter UI obsoleto (deprecato)
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: servizi audio/appunti/input/video e connessioni di rete
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: avvio di una connessione peer
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: comunica con [rustdesk-server](https://github.com/rustdesk/rustdesk-server), attende la connessione remota diretta (TCP hole punching) oppure indiretta (relayed)
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: codice specifico della piattaforma
+- **[flutter](https://github.com/accamj/amjdesk/tree/master/flutter)**: codice Flutter per desktop e mobile
+- **[flutter/web/js](https://github.com/accamj/amjdesk/tree/master/flutter/web/js)**: JavaScript per client web Flutter
 
 ## Schermate
 

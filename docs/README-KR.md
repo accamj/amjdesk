@@ -20,7 +20,7 @@ Rust로 작성되었고, 설정없이 바로 사용할 수 있는 원격 데스�
 
 AmjDesk는 모든 기여를 환영합니다. 기여하고자 한다면 [`docs/CONTRIBUTING.md`](CONTRIBUTING.md)를 참조해주세요.
 
-[**AmjDesk는 어떻게 작동하는가?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
+[**AmjDesk는 어떻게 작동하는가?**](https://github.com/accamj/amjdesk/wiki/How-does-AmjDesk-work%3F)
 
 [**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
@@ -137,16 +137,16 @@ target/release/rustdesk
 
 ## File Structure
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, tcp/udp 랩퍼, protobuf, 파일 전송을 위한 fs 함수, 그 외 유틸리티 함수
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: 화면 캡처
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: 플랫폼 고유 키보드/마우스 컨트롤
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: 오디오, 클립보드, 입력, 비디오 서비스 그리고 네트워크 연결
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: 피어 접속 시작
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server)와 통신해서 리모트 다이렉트(TCP hole punching) 혹은 relayed 접속
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: 플랫폼 고유의 코드
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: Flutter code for mobile
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Javascript for Flutter web client
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: 비디오 코덱, 설정, tcp/udp 랩퍼, protobuf, 파일 전송을 위한 fs 함수, 그 외 유틸리티 함수
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: 화면 캡처
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: 플랫폼 고유 키보드/마우스 컨트롤
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: 오디오, 클립보드, 입력, 비디오 서비스 그리고 네트워크 연결
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: 피어 접속 시작
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server)와 통신해서 리모트 다이렉트(TCP hole punching) 혹은 relayed 접속
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: 플랫폼 고유의 코드
+- **[flutter](https://github.com/accamj/amjdesk/tree/master/flutter)**: Flutter code for mobile
+- **[flutter/web/js](https://github.com/accamj/amjdesk/tree/master/flutter/web/js)**: Javascript for Flutter web client
 
 ## Snapshot
 

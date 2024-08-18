@@ -19,7 +19,7 @@ Kolejny program do zdalnego pulpitu, napisany w Rust. Działa od samego początk
 
 AmjDesk zaprasza do współpracy każdego. Zobacz [`docs/CONTRIBUTING-PL.md`](CONTRIBUTING-PL.md) pomoc w uruchomieniu programu.
 
-[**PYTANIA I ODPOWIEDZI (FAQ)**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**PYTANIA I ODPOWIEDZI (FAQ)**](https://github.com/accamj/amjdesk/wiki/FAQ)
 
 [**POBIERANIE BINARIÓW**](https://github.com/accamj/amjdesk/releases)
 
@@ -144,16 +144,16 @@ Upewnij się, że uruchamiasz te polecenia z katalogu głównego repozytorium Am
 
 ## Struktura plików
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: kodek wideo, konfiguracja, obsługa tcp/udp, protobuf, funkcje systemu plików do transferu plików i kilka innych funkcji użytkowych
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: przechwytywanie ekranu
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: specyficzne dla danej platformy sterowanie klawiaturą/myszą
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: audio/schowek/wejście(input)/wideo oraz połączenia sieciowe
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: uruchamia połączenie bezpośrednie
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Komunikacja z [rustdesk-server](https://github.com/rustdesk/rustdesk-server), czekanie na bezpośrednie (odpytywanie TCP) lub przekazywane połączenie
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: kod specyficzny dla danej platformy
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: kod Flutter dla urządzeń mobilnych
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: JavaScript dla Flutter - klient web
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: kodek wideo, konfiguracja, obsługa tcp/udp, protobuf, funkcje systemu plików do transferu plików i kilka innych funkcji użytkowych
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: przechwytywanie ekranu
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: specyficzne dla danej platformy sterowanie klawiaturą/myszą
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: audio/schowek/wejście(input)/wideo oraz połączenia sieciowe
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: uruchamia połączenie bezpośrednie
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: Komunikacja z [rustdesk-server](https://github.com/rustdesk/rustdesk-server), czekanie na bezpośrednie (odpytywanie TCP) lub przekazywane połączenie
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: kod specyficzny dla danej platformy
+- **[flutter](https://github.com/accamj/amjdesk/tree/master/flutter)**: kod Flutter dla urządzeń mobilnych
+- **[flutter/web/js](https://github.com/accamj/amjdesk/tree/master/flutter/web/js)**: JavaScript dla Flutter - klient web
 
 ## Zrzuty ekranu
 

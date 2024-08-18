@@ -488,7 +488,7 @@ pub fn start_os_service() {
         let keeps_headless = sid.is_empty() && desktop.is_headless();
         let keeps_session = sid == desktop.sid;
         if keeps_headless || keeps_session {
-            // for fixing https://github.com/rustdesk/rustdesk/issues/3129 to avoid too much dbus calling,
+            // for fixing https://github.com/accamj/amjdesk/issues/3129 to avoid too much dbus calling,
             sleep_millis(500);
         } else {
             sleep_millis(super::SERVICE_INTERVAL);
@@ -780,9 +780,9 @@ pub fn check_super_user_permission() -> ResultType<bool> {
     } else {
         arg = "echo";
     }
-    // https://github.com/rustdesk/rustdesk/issues/2756
+    // https://github.com/accamj/amjdesk/issues/2756
     if let Ok(status) = Command::new("pkexec").arg(arg).status() {
-        // https://github.com/rustdesk/rustdesk/issues/5205#issuecomment-1658059657s
+        // https://github.com/accamj/amjdesk/issues/5205#issuecomment-1658059657s
         Ok(status.code() != Some(126) && status.code() != Some(127))
     } else {
         Ok(true)

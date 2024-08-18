@@ -20,7 +20,7 @@ Rustで書かれた、設定不要ですぐに使えるリモートデスクト�
 
 AmjDeskは誰からの貢献も歓迎します。 貢献するには [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) を参照してください。
 
-[**AmjDeskはどの様に動くのか?**](https://github.com/rustdesk/rustdesk/wiki/How-does-AmjDesk-work%3F)
+[**AmjDeskはどの様に動くのか?**](https://github.com/accamj/amjdesk/wiki/How-does-AmjDesk-work%3F)
 
 [**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
@@ -140,14 +140,14 @@ target/release/rustdesk
 
 ## ファイル構造
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: ビデオコーデック、コンフィグ、tcp/udpラッパー、protobuf、ファイル転送用のfs関数、その他のユーティリティ関数
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: スクリーンキャプチャ
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: プラットフォーム固有のキーボード/マウスコントロール
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: オーディオ/クリップボード/入力/ビデオサービス、ネットワーク接続
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: ピア接続の開始
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server), と通信し、リモートダイレクト (TCP hole punching) または中継接続を待つ。
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: プラットフォーム固有のコード
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: ビデオコーデック、コンフィグ、tcp/udpラッパー、protobuf、ファイル転送用のfs関数、その他のユーティリティ関数
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: スクリーンキャプチャ
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: プラットフォーム固有のキーボード/マウスコントロール
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: オーディオ/クリップボード/入力/ビデオサービス、ネットワーク接続
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: ピア接続の開始
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: [rustdesk-server](https://github.com/rustdesk/rustdesk-server), と通信し、リモートダイレクト (TCP hole punching) または中継接続を待つ。
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: プラットフォーム固有のコード
 
 ## スナップショット
 

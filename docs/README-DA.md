@@ -6,7 +6,7 @@
   <a href="#filstruktur">Filstruktur</a> •
   <a href="#skærmbilleder">Skærmbilleder</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-VN.md">Tiếng Việt</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Vi har brug for din hjælp til at oversætte denne README, <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">AmjDesk UI</a> og <a href=" https://github.com/rustdesk/doc.rustdesk.com">Dokument</a> til dit modersmål</b>
+  <b>Vi har brug for din hjælp til at oversætte denne README, <a href="https://github.com/accamj/amjdesk/tree/master/src/lang">AmjDesk UI</a> og <a href=" https://github.com/rustdesk/doc.rustdesk.com">Dokument</a> til dit modersmål</b>
 </p>
 
 Chat med os: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
@@ -129,14 +129,14 @@ Sørg for, at du kører disse kommandoer fra roden af AmjDesk-lageret, ellers ka
 
 ## Filstruktur
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs funktioner til filoverførsel og nogle andre hjælpefunktioner
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: Skærmbillede
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: platform specifik tastatur/mus kontrol
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: lyd/udklipsholder/input/videotjenester og netværksforbindelser
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: starte en peer-forbindelse
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: Kommuniker med [rustdesk-server](https://github.com/rustdesk/rustdesk-server), vent på direkte fjernforbindelse (TCP-hulning) eller relæforbindelse
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: Javascript til Flutter webklient
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: video codec, config, tcp/udp wrapper, protobuf, fs funktioner til filoverførsel og nogle andre hjælpefunktioner
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: Skærmbillede
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: platform specifik tastatur/mus kontrol
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: lyd/udklipsholder/input/videotjenester og netværksforbindelser
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: starte en peer-forbindelse
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: Kommuniker med [rustdesk-server](https://github.com/rustdesk/rustdesk-server), vent på direkte fjernforbindelse (TCP-hulning) eller relæforbindelse
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: Javascript til Flutter webklient
 
 ## Skærmbilleder
 

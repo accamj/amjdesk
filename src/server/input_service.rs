@@ -592,7 +592,7 @@ fn key_sleep() {
 
 #[inline]
 fn get_modifier_state(key: Key, en: &mut Enigo) -> bool {
-    // https://github.com/rustdesk/rustdesk/issues/332
+    // https://github.com/accamj/amjdesk/issues/332
     // on Linux, if RightAlt is down, RightAlt status is false, Alt status is true
     // but on Windows, both are true
     let x = en.get_key_state(key.clone());
@@ -1496,9 +1496,9 @@ fn skip_led_sync_control_key(_key: &ControlKey) -> bool {
 
 // LockModesHandler should not be created when single meta is pressing and releasing.
 // Because the drop function may insert "CapsLock Click" and "NumLock Click", which breaks single meta click.
-// https://github.com/rustdesk/rustdesk/issues/3928#issuecomment-1496936687
-// https://github.com/rustdesk/rustdesk/issues/3928#issuecomment-1500415822
-// https://github.com/rustdesk/rustdesk/issues/3928#issuecomment-1500773473
+// https://github.com/accamj/amjdesk/issues/3928#issuecomment-1496936687
+// https://github.com/accamj/amjdesk/issues/3928#issuecomment-1500415822
+// https://github.com/accamj/amjdesk/issues/3928#issuecomment-1500773473
 #[cfg(any(target_os = "windows", target_os = "linux"))]
 fn skip_led_sync_control_key(key: &ControlKey) -> bool {
     matches!(

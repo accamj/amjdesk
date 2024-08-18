@@ -1,4 +1,4 @@
-// https://github.com/rustdesk/rustdesk/discussions/6444#discussioncomment-9010062
+// https://github.com/accamj/amjdesk/discussions/6444#discussioncomment-9010062
 
 #include <iostream>
 #include <Windows.h>

@@ -24,7 +24,7 @@ Daha spesifik git talimatları için, [GitHub iş akışı 101](https://github.c
 
 ## Davranış
 
-https://github.com/rustdesk/rustdesk/blob/master/docs/CODE_OF_CONDUCT-TR.md
+https://github.com/accamj/amjdesk/blob/master/docs/CODE_OF_CONDUCT-TR.md
 
 ## İletişim
 

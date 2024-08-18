@@ -169,7 +169,7 @@ fn _get_values_of_seat0(indices: &[usize], ignore_gdm_wayland: bool) -> Vec<Stri
             }
         }
 
-        // some case, there is no seat0 https://github.com/rustdesk/rustdesk/issues/73
+        // some case, there is no seat0 https://github.com/accamj/amjdesk/issues/73
         for line in String::from_utf8_lossy(&output.stdout).lines() {
             if ignore_loginctl_line(line) {
                 continue;

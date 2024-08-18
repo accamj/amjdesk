@@ -1873,7 +1873,7 @@ Future<bool> restoreWindowPosition(WindowType type,
 
   switch (type) {
     case WindowType.Main:
-      // https://github.com/rustdesk/rustdesk/issues/8038
+      // https://github.com/accamj/amjdesk/issues/8038
       // `setBounds()` in `window_manager` will use the current devicePixelRatio.
       // So we need to adjust the offset by the scale factor.
       // https://github.com/rustdesk-org/window_manager/blob/f19acdb008645366339444a359a45c3257c8b32e/windows/window_manager.cpp#L701
@@ -3414,8 +3414,8 @@ get defaultOptionApproveMode => isCustomClient ? 'password-click' : '';
 // When we drag the blank tab bar (not the tab), the window will be dragged normally by adding the `onPanStart` handle.
 //
 // See the following code for more details:
-// https://github.com/rustdesk/rustdesk/blob/ce1dac3b8613596b4d8ae981275f9335489eb935/flutter/lib/desktop/widgets/tabbar_widget.dart#L385
-// https://github.com/rustdesk/rustdesk/blob/ce1dac3b8613596b4d8ae981275f9335489eb935/flutter/lib/desktop/widgets/tabbar_widget.dart#L399
+// https://github.com/accamj/amjdesk/blob/ce1dac3b8613596b4d8ae981275f9335489eb935/flutter/lib/desktop/widgets/tabbar_widget.dart#L385
+// https://github.com/accamj/amjdesk/blob/ce1dac3b8613596b4d8ae981275f9335489eb935/flutter/lib/desktop/widgets/tabbar_widget.dart#L399
 //
 // @platforms macos
 disableWindowMovable(int? windowId) {

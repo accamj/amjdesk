@@ -20,7 +20,7 @@ Chat with us: [知乎](https://www.zhihu.com/people/rustdesk) | [Discord](https:
 
 AmjDesk 期待各位的贡献. 如何参与开发? 详情请看 [CONTRIBUTING.md](CONTRIBUTING.md).
 
-[**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**FAQ**](https://github.com/accamj/amjdesk/wiki/FAQ)
 
 [**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
 
@@ -204,16 +204,16 @@ target/release/rustdesk
 
 ## 文件结构
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: 视频编解码, 配置, tcp/udp 封装, protobuf, 文件传输相关文件系统操作函数, 以及一些其他实用函数
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: 屏幕截取
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: 平台相关的鼠标键盘输入
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: GUI
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: 被控端服务音频、剪切板、输入、视频服务、网络连接的实现
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: 控制端
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: 与[rustdesk-server](https://github.com/rustdesk/rustdesk-server)保持UDP通讯, 等待远程连接（通过打洞直连或者中继）
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: 平台服务相关代码
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: 移动版本的Flutter代码 
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Flutter Web版本中的Javascript代码
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: 视频编解码, 配置, tcp/udp 封装, protobuf, 文件传输相关文件系统操作函数, 以及一些其他实用函数
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: 屏幕截取
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: 平台相关的鼠标键盘输入
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: GUI
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: 被控端服务音频、剪切板、输入、视频服务、网络连接的实现
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: 控制端
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: 与[rustdesk-server](https://github.com/rustdesk/rustdesk-server)保持UDP通讯, 等待远程连接（通过打洞直连或者中继）
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: 平台服务相关代码
+- **[flutter](https://github.com/accamj/amjdesk/tree/master/flutter)**: 移动版本的Flutter代码 
+- **[flutter/web/js](https://github.com/accamj/amjdesk/tree/master/flutter/web/js)**: Flutter Web版本中的Javascript代码
 
 ## 截图
 

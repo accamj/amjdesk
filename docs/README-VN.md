@@ -8,7 +8,7 @@
   <a href="#file-structure">Structure</a> •
   <a href="#snapshot">Snapshot</a><br>
   [<a href="../README.md">English</a>] | [<a href="README-UA.md">Українська</a>] | [<a href="README-CS.md">česky</a>] | [<a href="README-ZH.md">中文</a>] | [<a href="README-HU.md">Magyar</a>] | [<a href="README-ES.md">Español</a>] | [<a href="README-FA.md">فارسی</a>] | [<a href="README-FR.md">Français</a>] | [<a href="README-DE.md">Deutsch</a>] | [<a href="README-PL.md">Polski</a>] | [<a href="README-ID.md">Indonesian</a>] | [<a href="README-FI.md">Suomi</a>] | [<a href="README-ML.md">മലയാളം</a>] | [<a href="README-JP.md">日本語</a>] | [<a href="README-NL.md">Nederlands</a>] | [<a href="README-IT.md">Italiano</a>] | [<a href="README-RU.md">Русский</a>] | [<a href="README-PTBR.md">Português (Brasil)</a>] | [<a href="README-EO.md">Esperanto</a>] | [<a href="README-KR.md">한국어</a>] | [<a href="README-AR.md">العربي</a>] | [<a href="README-GR.md">Ελληνικά</a>]<br>
-  <b>Chúng tôi rất hoan nghênh sự hỗ trợ của bạn trong việc dịch trang README, trang giao diện người dùng của AmjDesk - <a href="https://github.com/rustdesk/rustdesk/tree/master/src/lang">AmjDesk UI</a> và trang tài liệu của AmjDesk - <a href="https://github.com/rustdesk/doc.rustdesk.com">AmjDesk Doc</a> sang Tiếng Việt</b>
+  <b>Chúng tôi rất hoan nghênh sự hỗ trợ của bạn trong việc dịch trang README, trang giao diện người dùng của AmjDesk - <a href="https://github.com/accamj/amjdesk/tree/master/src/lang">AmjDesk UI</a> và trang tài liệu của AmjDesk - <a href="https://github.com/rustdesk/doc.rustdesk.com">AmjDesk Doc</a> sang Tiếng Việt</b>
 </p>
 
 Hãy trao đổi với chúng tôi qua: [Discord](https://discord.gg/nDceKgxnkV) | [Twitter](https://twitter.com/rustdesk) | [Reddit](https://www.reddit.com/r/rustdesk)
@@ -21,9 +21,9 @@ AmjDesk là một phần mềm điểu khiển máy tính từ xa mã nguồn m�
 
 **AmjDesk** luôn hoan nghênh mọi đóng góp từ mọi người. Hãy xem tệp [`docs/CONTRIBUTING.md`](CONTRIBUTING.md) để bắt đầu. 
 
-[**FAQ**](https://github.com/rustdesk/rustdesk/wiki/FAQ)
+[**FAQ**](https://github.com/accamj/amjdesk/wiki/FAQ)
 [**BINARY DOWNLOAD**](https://github.com/accamj/amjdesk/releases)
-[**NIGHTLY BUILD**](https://github.com/rustdesk/rustdesk/FAQreleases/tag/nightly)
+[**NIGHTLY BUILD**](https://github.com/accamj/amjdesk/FAQreleases/tag/nightly)
 
 [<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
     alt="Get it on F-Droid"
@@ -31,7 +31,7 @@ AmjDesk là một phần mềm điểu khiển máy tính từ xa mã nguồn m�
 
 ## Dependencies
 
-Phiên bản máy tính sử dụng __Flutter__ hoặc __Sciter__ (đã lỗi thời) cho giao diện người dùng (GUI). Hướng dẫn này chỉ áp dụng cho phiên bản Sciter, vì nó thân thiện và dễ bắt đầu hơn. Hãy kiểm tra [CI](https://github.com/rustdesk/rustdesk/blob/master/.github/workflows/flutter-build.yml) của chúng tôi để xây dựng phiên bản Flutter.
+Phiên bản máy tính sử dụng __Flutter__ hoặc __Sciter__ (đã lỗi thời) cho giao diện người dùng (GUI). Hướng dẫn này chỉ áp dụng cho phiên bản Sciter, vì nó thân thiện và dễ bắt đầu hơn. Hãy kiểm tra [CI](https://github.com/accamj/amjdesk/blob/master/.github/workflows/flutter-build.yml) của chúng tôi để xây dựng phiên bản Flutter.
 
 Vui lòng tự tải thư viện `Sciter` về máy theo hướng dẫn cho từng hệ điều hành.
 
@@ -139,16 +139,16 @@ Hãy đảm bảo rằng bạn đang chạy các lệnh này từ gốc của th
 
 ## Cấu trúc tệp tin
 
-- **[libs/hbb_common](https://github.com/rustdesk/rustdesk/tree/master/libs/hbb_common)**: video codec, cấu hình, tcp/udp wrapper, protobuf, fs functions để truyền file, và một số hàm tiện ích khác
-- **[libs/scrap](https://github.com/rustdesk/rustdesk/tree/master/libs/scrap)**: ghi lại màn hình
-- **[libs/enigo](https://github.com/rustdesk/rustdesk/tree/master/libs/enigo)**: điều khiển máy tính/chuột trên các nền tảng khác nhau
-- **[src/ui](https://github.com/rustdesk/rustdesk/tree/master/src/ui)**: giao diện người dùng
-- **[src/server](https://github.com/rustdesk/rustdesk/tree/master/src/server)**: các dịch vụ âm thanh, clipboard, đầu vào, video và các kết nối mạng
-- **[src/client.rs](https://github.com/rustdesk/rustdesk/tree/master/src/client.rs)**: bắt đầu kết nối với một peer
-- **[src/rendezvous_mediator.rs](https://github.com/rustdesk/rustdesk/tree/master/src/rendezvous_mediator.rs)**: giao tiếp với [rustdesk-server](https://github.com/rustdesk/rustdesk-server), đợi kết nối trực tiếp (TCP hole punching) hoặc kết nối được chuyển tiếp.
-- **[src/platform](https://github.com/rustdesk/rustdesk/tree/master/src/platform)**: mã nguồn riêng cho mỗi nền tảng
-- **[flutter](https://github.com/rustdesk/rustdesk/tree/master/flutter)**: Mã Flutter dành máy tính và điện thoại
-- **[flutter/web/js](https://github.com/rustdesk/rustdesk/tree/master/flutter/web/js)**: Mã JavaScript dành cho giao diện trên web bằng Flutter
+- **[libs/hbb_common](https://github.com/accamj/amjdesk/tree/master/libs/hbb_common)**: video codec, cấu hình, tcp/udp wrapper, protobuf, fs functions để truyền file, và một số hàm tiện ích khác
+- **[libs/scrap](https://github.com/accamj/amjdesk/tree/master/libs/scrap)**: ghi lại màn hình
+- **[libs/enigo](https://github.com/accamj/amjdesk/tree/master/libs/enigo)**: điều khiển máy tính/chuột trên các nền tảng khác nhau
+- **[src/ui](https://github.com/accamj/amjdesk/tree/master/src/ui)**: giao diện người dùng
+- **[src/server](https://github.com/accamj/amjdesk/tree/master/src/server)**: các dịch vụ âm thanh, clipboard, đầu vào, video và các kết nối mạng
+- **[src/client.rs](https://github.com/accamj/amjdesk/tree/master/src/client.rs)**: bắt đầu kết nối với một peer
+- **[src/rendezvous_mediator.rs](https://github.com/accamj/amjdesk/tree/master/src/rendezvous_mediator.rs)**: giao tiếp với [rustdesk-server](https://github.com/rustdesk/rustdesk-server), đợi kết nối trực tiếp (TCP hole punching) hoặc kết nối được chuyển tiếp.
+- **[src/platform](https://github.com/accamj/amjdesk/tree/master/src/platform)**: mã nguồn riêng cho mỗi nền tảng
+- **[flutter](https://github.com/accamj/amjdesk/tree/master/flutter)**: Mã Flutter dành máy tính và điện thoại
+- **[flutter/web/js](https://github.com/accamj/amjdesk/tree/master/flutter/web/js)**: Mã JavaScript dành cho giao diện trên web bằng Flutter
 
 ## Snapshot
 

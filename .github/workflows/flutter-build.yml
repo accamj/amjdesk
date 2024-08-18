@@ -11,7 +11,7 @@ on:
         default: "nightly"
 
 env:
-  WIN_RUST_VERSION: "1.75" # https://github.com/rustdesk/rustdesk/discussions/7503, also 1.78 has ABI change which causes our sciter version not working, https://blog.rust-lang.org/2024/03/30/i128-layout-update.html
+  WIN_RUST_VERSION: "1.75" # https://github.com/accamj/amjdesk/discussions/7503, also 1.78 has ABI change which causes our sciter version not working, https://blog.rust-lang.org/2024/03/30/i128-layout-update.html
   RUST_VERSION: "1.75" # sciter failed on m1 with 1.78 because of https://blog.rust-lang.org/2024/03/30/i128-layout-update.html
   CARGO_NDK_VERSION: "3.1.2"
   LLVM_VERSION: "15.0.6"
@@ -562,7 +562,7 @@ jobs:
           - {
               target: aarch64-apple-darwin,
               os: macos-latest,
-              # extra-build-args: "--disable-flutter-texture-render", # disable this for mac, because we see a lot of users reporting flickering both on arm and x64, and we can not confirm if texture rendering has better performance if htere is no vram, https://github.com/rustdesk/rustdesk/issues/6296
+              # extra-build-args: "--disable-flutter-texture-render", # disable this for mac, because we see a lot of users reporting flickering both on arm and x64, and we can not confirm if texture rendering has better performance if htere is no vram, https://github.com/accamj/amjdesk/issues/6296
               extra-build-args: "",
               arch: aarch64,
             }

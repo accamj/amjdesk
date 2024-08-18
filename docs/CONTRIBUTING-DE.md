@@ -43,7 +43,7 @@ Spezifische Git-Anweisungen finden Sie im [GitHub-Workflow](https://github.com/s
 
 ## Verhalten
 
-https://github.com/rustdesk/rustdesk/blob/master/docs/CODE_OF_CONDUCT.md
+https://github.com/accamj/amjdesk/blob/master/docs/CODE_OF_CONDUCT.md
 
 ## Kommunikation
 

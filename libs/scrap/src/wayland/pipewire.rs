@@ -107,7 +107,7 @@ pub struct PipeWireCapturable {
 impl PipeWireCapturable {
     fn new(conn: Arc<SyncConnection>, fd: OwnedFd, stream: PwStreamInfo) -> Self {
         // alternative to get screen resolution as stream.size is not always correct ex: on fractional scaling
-        // https://github.com/rustdesk/rustdesk/issues/6116#issuecomment-1817724244
+        // https://github.com/accamj/amjdesk/issues/6116#issuecomment-1817724244
         let res = get_res(Self {
             dbus_conn: conn.clone(),
             fd: fd.clone(),

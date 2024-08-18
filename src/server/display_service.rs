@@ -8,7 +8,7 @@ use hbb_common::get_version_number;
 use hbb_common::protobuf::MessageField;
 use scrap::Display;
 
-// https://github.com/rustdesk/rustdesk/discussions/6042, avoiding dbus call
+// https://github.com/accamj/amjdesk/discussions/6042, avoiding dbus call
 
 pub const NAME: &'static str = "display";
 
