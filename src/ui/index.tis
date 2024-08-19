@@ -3,7 +3,7 @@ stdout.println("current platform:", OS);
 stdout.println("is_xfce: ", is_xfce);
 
 // html min-width, min-height not working on mac, below works for all
-view.windowMinSize = (scaleIt(400), scaleIt(300));
+view.windowMinSize = (scaleIt(515), scaleIt(400));
 
 var app;
 var tmp = handler.get_connect_status();
@@ -559,28 +559,33 @@ class App: Reactor.Component
     function render() {
         var is_can_screen_recording = handler.is_can_screen_recording(false);
         return
-            <div .app>
-                <div style="position: absolute;size:*;background:white;padding: 12 6px; display: inline-block;">
-                    <div>
-                        <div .title>{translate('Your Desktop')}</div>
-                        <div .lighter-text>{translate('desk_tip')}</div>
-                        <div .your-desktop>
-                            <MyIdMenu />
-                            {key_confirmed ? <input type="text" readonly value={formatId(get_id())}/> : translate("Generating ...")}
+            <div .app style="position: absolute;size:*;display: inline-block;">
+                <frameset rows="*,32px">
+                    <div .panel style="padding: 12 px; margin-left:1em; margin-right:1em;">
+                        <div>
+                            <div .title>{translate('Your Desktop')}</div>
+                            <div .lighter-text>{translate('desk_tip')}</div>
+                            <div .your-desktop>
+                                <MyIdMenu />
+                                {key_confirmed ? <input type="text" readonly value={formatId(get_id())}/> : translate("Generating ...")}
+                            </div>
+                            <p/>
+                            <PasswordArea />
                         </div>
-                        <PasswordArea />
+                        {!is_win || handler.is_installed() ? "": <InstallMe />}
+                        {software_update_url ? <UpdateMe /> : ""}
+                        {is_win && handler.is_installed() && !software_update_url && handler.is_installed_lower_version() ? <UpgradeMe /> : ""}
+                        {is_can_screen_recording ? "": <CanScreenRecording />}
+                        {is_can_screen_recording && !handler.is_process_trusted(false) ? <TrustMe /> : ""}
+                        {!service_stopped && is_can_screen_recording && handler.is_process_trusted(false) && handler.is_installed() && !handler.is_installed_daemon(false) ? <InstallDaemon /> : ""}
+                        {system_error ? <SystemError /> : ""}
+                        {!system_error && handler.is_login_wayland() && !handler.current_is_wayland() ? <FixWayland /> : ""}
+                        {!system_error && handler.current_is_wayland() ? <ModifyDefaultLogin /> : ""}
                     </div>
-                    {!is_win || handler.is_installed() ? "": <InstallMe />}
-                    {software_update_url ? <UpdateMe /> : ""}
-                    {is_win && handler.is_installed() && !software_update_url && handler.is_installed_lower_version() ? <UpgradeMe /> : ""}
-                    {is_can_screen_recording ? "": <CanScreenRecording />}
-                    {is_can_screen_recording && !handler.is_process_trusted(false) ? <TrustMe /> : ""}
-                    {!service_stopped && is_can_screen_recording && handler.is_process_trusted(false) && handler.is_installed() && !handler.is_installed_daemon(false) ? <InstallDaemon /> : ""}
-                    {system_error ? <SystemError /> : ""}
-                    {!system_error && handler.is_login_wayland() && !handler.current_is_wayland() ? <FixWayland /> : ""}
-                    {!system_error && handler.current_is_wayland() ? <ModifyDefaultLogin /> : ""}
-                    <ConnectStatus @{this.connect_status} />
-                </div>
+                    <div .panel style="margin-bottom:1em;">
+                        <ConnectStatus @{this.connect_status} />
+                    </div>
+                </frameset>
             </div>;
     }
 
